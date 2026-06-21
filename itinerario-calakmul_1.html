@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mérida → Calakmul — Itinerario</title>
+
+<!-- Open Graph / WhatsApp preview -->
+<!-- IMPORTANTE: reemplaza TU-USUARIO y TU-REPO con tus datos reales de GitHub Pages -->
+<meta property="og:title" content="Tres días en la biosfera — Mérida → Calakmul">
+<meta property="og:description" content="Itinerario, mapa y cotización del viaje. Toca un hotel y mira el total cambiar.">
+<meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/og-image.png">
+<meta property="og:url" content="https://TU-USUARIO.github.io/TU-REPO/index.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root{
+    --bark: #1c1812;
+    --bark-soft: #2a241b;
+    --stone: #5c5346;
+    --limestone: #ede6d6;
+    --limestone-deep: #ddd2b8;
+    --jade: #2f5d4f;
+    --jade-bright: #4d8a73;
+    --macaw: #c4501f;
+    --macaw-bright: #e2682f;
+    --gold: #c79a3d;
+    --paper: #faf7f0;
+    --line: rgba(28,24,18,0.12);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--paper);
+    color:var(--bark);
+    font-family:'Space Grotesk', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  ::selection{ background:var(--gold); color:var(--bark); }
+
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 28px; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(ellipse 140% 100% at 50% -20%, #2a3f33 0%, var(--bark) 55%);
+    color:var(--limestone);
+    padding:76px 0 64px;
+    overflow:hidden;
+    border-bottom:1px solid #000;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      repeating-linear-gradient(115deg, transparent 0 38px, rgba(199,154,61,0.05) 38px 40px);
+    pointer-events:none;
+  }
+  .hero-glyphs{
+    position:absolute; right:-40px; top:-30px;
+    font-family:'Fraunces', serif;
+    font-size:280px;
+    font-weight:300;
+    color:rgba(199,154,61,0.06);
+    line-height:1;
+    user-select:none;
+    pointer-events:none;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:26px; height:1px;
+    background:var(--gold);
+  }
+  h1.title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(38px, 5.4vw, 66px);
+    line-height:1.02;
+    letter-spacing:-0.01em;
+    max-width:780px;
+  }
+  h1.title em{
+    font-style:italic;
+    font-weight:300;
+    color:var(--jade-bright);
+  }
+  .hero-sub{
+    margin-top:22px;
+    max-width:560px;
+    font-size:17px;
+    color:rgba(237,230,214,0.72);
+    font-weight:400;
+  }
+  .hero-stats{
+    display:flex;
+    gap:0;
+    margin-top:48px;
+    border-top:1px solid rgba(237,230,214,0.16);
+    padding-top:24px;
+    flex-wrap:wrap;
+  }
+  .hstat{
+    padding-right:36px;
+    margin-right:36px;
+    border-right:1px solid rgba(237,230,214,0.14);
+  }
+  .hstat:last-child{ border-right:none; }
+  .hstat .n{
+    font-family:'Fraunces', serif;
+    font-size:30px;
+    font-weight:600;
+    color:var(--limestone);
+  }
+  .hstat .l{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:rgba(237,230,214,0.5);
+    margin-top:4px;
+  }
+
+  /* ---------- SECTION HEADERS ---------- */
+  .section{ padding:72px 0; border-bottom:1px solid var(--line); }
+  .section.tight{ padding-top:56px; }
+  .sec-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:36px;
+    flex-wrap:wrap;
+  }
+  .sec-tag{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--macaw);
+    margin-bottom:10px;
+    display:block;
+  }
+  .sec-head h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(26px, 3vw, 36px);
+    letter-spacing:-0.01em;
+  }
+  .sec-note{
+    font-size:14.5px;
+    color:var(--stone);
+    max-width:360px;
+    text-align:right;
+  }
+  @media(max-width:720px){ .sec-note{text-align:left;} }
+
+  /* ---------- MAP SECTION ---------- */
+  .map-shell{
+    background:linear-gradient(180deg, #243b30 0%, #1c2e25 100%);
+    border-radius:18px;
+    padding:6px;
+    position:relative;
+    box-shadow:0 30px 60px -30px rgba(28,24,18,0.5);
+  }
+  .map-inner{
+    background:#f0ead8;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+  }
+  svg.routemap{ display:block; width:100%; height:auto; }
+
+  .map-caption{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 20px 4px;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .map-legend{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:rgba(237,230,214,0.65);
+    padding:14px 20px 18px;
+  }
+  .map-legend span{ display:inline-flex; align-items:center; gap:7px; }
+  .dot{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+
+  /* tooltip on map */
+  .pin{ cursor:pointer; }
+  .pin-tip{
+    position:absolute;
+    background:var(--bark);
+    color:var(--limestone);
+    padding:10px 13px;
+    border-radius:9px;
+    font-size:12.5px;
+    font-family:'Space Grotesk',sans-serif;
+    line-height:1.4;
+    pointer-events:none;
+    opacity:0;
+    transform:translate(-50%,calc(-100% - 14px)) scale(0.96);
+    transition:opacity .14s ease, transform .14s ease;
+    white-space:nowrap;
+    z-index:30;
+    box-shadow:0 14px 30px -8px rgba(0,0,0,0.5);
+    border:1px solid rgba(199,154,61,0.25);
+  }
+  .pin-tip b{ color:var(--gold); font-weight:600; display:block; font-size:13px; margin-bottom:2px;}
+  .pin-tip .price{ color:var(--jade-bright); font-family:'JetBrains Mono',monospace; }
+  .pin-tip.show{ opacity:1; transform:translate(-50%,calc(-100% - 8px)) scale(1); }
+  .pin-tip::after{
+    content:"";
+    position:absolute; left:50%; top:100%;
+    transform:translateX(-50%);
+    border:6px solid transparent;
+    border-top-color:var(--bark);
+  }
+
+  /* ---------- TIMELINE ---------- */
+  .day-block{ margin-bottom:8px; }
+  .day-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    padding:18px 0 14px;
+    border-bottom:2px solid var(--bark);
+    cursor:pointer;
+    user-select:none;
+  }
+  .day-num{
+    font-family:'Fraunces', serif;
+    font-size:13px;
+    color:var(--paper);
+    background:var(--macaw);
+    width:30px;height:30px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:600;
+    flex-shrink:0;
+  }
+  .day-head h3{
+    font-family:'Fraunces', serif;
+    font-size:22px;
+    font-weight:600;
+  }
+  .day-head .day-date{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--stone);
+    margin-left:auto;
+  }
+  .day-events{
+    padding:6px 0 30px 44px;
+    display:grid;
+    gap:0;
+  }
+  .ev{
+    display:grid;
+    grid-template-columns:78px 1fr;
+    gap:18px;
+    padding:14px 0;
+    border-left:1.5px solid var(--line);
+    margin-left:5px;
+    padding-left:24px;
+    position:relative;
+  }
+  .ev::before{
+    content:"";
+    position:absolute;
+    left:-5.5px; top:18px;
+    width:9px; height:9px;
+    border-radius:50%;
+    background:var(--jade);
+    border:2px solid var(--paper);
+  }
+  .ev.alert::before{ background:var(--macaw); }
+  .ev-time{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    color:var(--stone);
+    padding-top:1px;
+  }
+  .ev-body h4{
+    font-size:15.5px;
+    font-weight:600;
+    margin-bottom:3px;
+  }
+  .ev-body p{
+    font-size:13.8px;
+    color:var(--stone);
+    max-width:560px;
+  }
+  .ev.alert .ev-body h4{ color:var(--macaw); }
+  .tag-warn{
+    display:inline-block;
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.04em;
+    background:rgba(196,80,31,0.1);
+    color:var(--macaw);
+    border:1px solid rgba(196,80,31,0.25);
+    padding:2px 8px;
+    border-radius:5px;
+    margin-top:6px;
+  }
+
+  /* ---------- HOTEL CARDS ---------- */
+  .hotel-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:16px;
+  }
+  @media(max-width:980px){ .hotel-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:560px){ .hotel-grid{ grid-template-columns:1fr; } }
+
+  .hcard{
+    background:var(--limestone);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:20px;
+    cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .hcard:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 36px -18px rgba(28,24,18,0.28);
+    border-color:var(--jade);
+  }
+  .hcard.active{
+    background:var(--bark);
+    color:var(--limestone);
+    border-color:var(--gold);
+  }
+  .hcard.active .hcard-tier,
+  .hcard.active .hcard-meta{ color:rgba(237,230,214,0.6); }
+  .hcard.active .hcard-price{ color:var(--gold); }
+
+  .hcard-tier{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--macaw);
+  }
+  .hcard h4{
+    font-family:'Fraunces', serif;
+    font-size:19px;
+    font-weight:600;
+    line-height:1.2;
+  }
+  .hcard-price{
+    font-family:'JetBrains Mono', monospace;
+    font-size:22px;
+    font-weight:500;
+    color:var(--jade);
+    margin-top:auto;
+  }
+  .hcard-price span{
+    font-size:11px;
+    color:var(--stone);
+    font-family:'Space Grotesk',sans-serif;
+    display:block;
+    margin-top:2px;
+  }
+  .hcard.active .hcard-price span{ color:rgba(237,230,214,0.5); }
+  .hcard-meta{
+    font-size:12.5px;
+    color:var(--stone);
+    line-height:1.45;
+  }
+  .hcard-cta{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:var(--jade);
+    margin-top:4px;
+  }
+  .hcard.active .hcard-cta{ color:var(--gold); }
+  .hcard-cta svg{ width:11px; height:11px; transition:transform .15s ease; }
+  .hcard:hover .hcard-cta svg{ transform:translateX(3px); }
+  .hcard-link{
+    font-size:11.5px;
+    text-decoration:none;
+    color:var(--jade-bright);
+    border-bottom:1px solid currentColor;
+    width:fit-content;
+  }
+  .hcard.active .hcard-link{ color:var(--jade-bright); }
+
+  /* ---------- QUOTE PANEL ---------- */
+  .quote-shell{
+    background:var(--bark);
+    border-radius:18px;
+    padding:40px;
+    color:var(--limestone);
+    position:sticky;
+    top:20px;
+  }
+  .quote-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:28px;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(237,230,214,0.14);
+  }
+  .quote-head .ql{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:6px;
+  }
+  .quote-head h3{
+    font-family:'Fraunces', serif;
+    font-size:24px;
+    font-weight:600;
+  }
+  .quote-hotel-badge{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    background:rgba(199,154,61,0.14);
+    border:1px solid rgba(199,154,61,0.3);
+    color:var(--gold);
+    padding:6px 11px;
+    border-radius:7px;
+    text-align:right;
+    line-height:1.4;
+  }
+
+  .qline{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    padding:11px 0;
+    border-bottom:1px dashed rgba(237,230,214,0.13);
+    font-size:14px;
+  }
+  .qline .ql-label{ color:rgba(237,230,214,0.78); }
+  .qline .ql-sub{
+    display:block;
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    color:rgba(237,230,214,0.4);
+    margin-top:2px;
+  }
+  .qline .ql-val{
+    font-family:'JetBrains Mono', monospace;
+    font-size:14.5px;
+    color:var(--limestone);
+    white-space:nowrap;
+    padding-left:14px;
+  }
+
+  .qgroup-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--jade-bright);
+    margin:22px 0 4px;
+  }
+  .qgroup-label:first-of-type{ margin-top:4px; }
+
+  .qtotal{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-top:24px;
+    padding-top:22px;
+    border-top:1px solid rgba(237,230,214,0.18);
+  }
+  .qtotal .tl{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:rgba(237,230,214,0.55);
+    margin-bottom:4px;
+  }
+  .qtotal .tv{
+    font-family:'Fraunces', serif;
+    font-size:38px;
+    font-weight:600;
+    color:var(--gold);
+    line-height:1;
+  }
+  .qtotal .tv small{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:rgba(237,230,214,0.5);
+    font-weight:400;
+  }
+  .qtotal .pp{
+    text-align:right;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:rgba(237,230,214,0.65);
+  }
+  .qtotal .pp b{ color:var(--limestone); font-size:16px; display:block;}
+
+  .quote-toggle-row{
+    display:flex;
+    gap:8px;
+    margin-top:24px;
+  }
+  .qtoggle{
+    flex:1;
+    background:rgba(237,230,214,0.06);
+    border:1px solid rgba(237,230,214,0.16);
+    color:rgba(237,230,214,0.7);
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    padding:9px 6px;
+    border-radius:8px;
+    text-align:center;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .qtoggle.on{
+    background:var(--jade);
+    color:var(--paper);
+    border-color:var(--jade);
+  }
+
+  /* ---------- LAYOUT: hotel + quote grid ---------- */
+  .hotel-quote-layout{
+    display:grid;
+    grid-template-columns:1.55fr 1fr;
+    gap:32px;
+    align-items:start;
+  }
+  @media(max-width:980px){
+    .hotel-quote-layout{ grid-template-columns:1fr; }
+    .quote-shell{ position:static; }
+  }
+
+  /* ---------- BUDGET TABLE (gas/food fixed) ---------- */
+  .fixed-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin-top:8px;
+  }
+  @media(max-width:760px){ .fixed-grid{grid-template-columns:1fr;} }
+  .fcard{
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:22px;
+    background:var(--limestone);
+  }
+  .fcard .ftag{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--jade);
+    margin-bottom:10px;
+    display:block;
+  }
+  .fcard h4{
+    font-family:'Fraunces', serif;
+    font-size:18px;
+    margin-bottom:14px;
+  }
+  .fcard .frow{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    padding:7px 0;
+    border-bottom:1px solid var(--line);
+    color:var(--stone);
+  }
+  .fcard .frow span:last-child{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--bark);
+  }
+  .fcard .ftotal{
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px;
+    padding-top:12px;
+    font-weight:600;
+  }
+  .fcard .ftotal span:last-child{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--macaw);
+    font-size:16px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:40px 0 60px;
+    text-align:center;
+  }
+  footer p{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    color:var(--stone);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; animation:none !important; }
+  }
+
+  /* focus visibility */
+  .hcard:focus-visible, .day-head:focus-visible, .qtoggle:focus-visible{
+    outline:2px solid var(--macaw);
+    outline-offset:3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-glyphs">𓍢</div>
+  <div class="wrap">
+    <div class="eyebrow">Mérida → Xpujil → Calakmul</div>
+    <h1 class="title">Tres días en la <em>biosfera</em>,<br>sin perder ni una hora.</h1>
+    <p class="hero-sub">Viernes de carretera, sábado de selva y piedra, domingo de regreso con sabor a Xpujil. Toca un hotel para ver cómo cambia el viaje completo.</p>
+    <div class="hero-stats">
+      <div class="hstat"><div class="n">~1,250</div><div class="l">km totales</div></div>
+      <div class="hstat"><div class="n">2</div><div class="l">noches en Xpujil</div></div>
+      <div class="hstat"><div class="n">15 km/l</div><div class="l">Prius 2021, carretera</div></div>
+      <div class="hstat"><div class="n">2:30pm</div><div class="l">cierre caseta Conhuas</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAP ============ -->
+<section class="section tight">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-tag">01 — La ruta</span>
+        <h2>De Mérida a la selva</h2>
+      </div>
+      <p class="sec-note">Pasa el cursor sobre cada punto. Los hoteles muestran precio por noche en el momento.</p>
+    </div>
+
+    <div class="map-shell">
+      <div class="map-inner">
+        <svg class="routemap" viewBox="0 0 1100 560" xmlns="http://www.w3.org/2000/svg" id="mapSvg">
+          <defs>
+            <linearGradient id="landGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f3edda"/>
+              <stop offset="100%" stop-color="#e9e0c6"/>
+            </linearGradient>
+            <pattern id="jungleTex" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+              <path d="M0 11 Q5 6 11 11 T22 11" stroke="#2f5d4f" stroke-width="0.6" fill="none" opacity="0.06"/>
+            </pattern>
+          </defs>
+
+          <rect width="1100" height="560" fill="url(#landGrad)"/>
+          <rect width="1100" height="560" fill="url(#jungleTex)"/>
+
+          <!-- reserve zone shading -->
+          <ellipse cx="760" cy="330" rx="300" ry="210" fill="#2f5d4f" opacity="0.07"/>
+          <text x="900" y="170" font-family="JetBrains Mono, monospace" font-size="11" fill="#5c5346" opacity="0.55" letter-spacing="1">RESERVA DE LA BIOSFERA</text>
+          <text x="900" y="185" font-family="JetBrains Mono, monospace" font-size="11" fill="#5c5346" opacity="0.55" letter-spacing="1">DE CALAKMUL</text>
+
+          <!-- route line: Merida -> Campeche -> Escarcega -> Xpujil -->
+          <path d="M 90 90 C 180 130, 220 180, 230 230 S 300 320, 380 340 S 560 360, 660 380 S 800 390, 890 400"
+                fill="none" stroke="#1c1812" stroke-width="2.4" stroke-dasharray="1 9" stroke-linecap="round" opacity="0.55"/>
+
+          <!-- branch route: Xpujil -> Calakmul (slow jungle road) -->
+          <path d="M 890 400 C 860 440, 840 470, 800 480 S 740 470, 705 460"
+                fill="none" stroke="#c4501f" stroke-width="2.2" stroke-dasharray="5 6" stroke-linecap="round" opacity="0.75"/>
+
+          <!-- highway label -->
+          <text x="430" y="330" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#5c5346" opacity="0.6" letter-spacing="0.5">MEX-180 / MEX-261</text>
+          <text x="760" y="375" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#5c5346" opacity="0.6" letter-spacing="0.5">MEX-186</text>
+
+          <!-- ===== CITY: Mérida ===== -->
+          <g class="pin" data-tip="merida">
+            <circle cx="90" cy="90" r="6" fill="#1c1812"/>
+            <circle cx="90" cy="90" r="11" fill="none" stroke="#1c1812" stroke-width="1" opacity="0.3"/>
+            <text x="106" y="86" font-family="Fraunces, serif" font-weight="600" font-size="16" fill="#1c1812">Mérida</text>
+            <text x="106" y="103" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#5c5346">Punto de partida</text>
+          </g>
+
+          <!-- ===== CITY: Campeche (waypoint) ===== -->
+          <g class="pin" data-tip="campeche">
+            <circle cx="232" cy="232" r="4.5" fill="#5c5346"/>
+            <text x="244" y="228" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="12.5" fill="#5c5346">Campeche</text>
+            <text x="244" y="242" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#8a8070">de paso</text>
+          </g>
+
+          <!-- ===== CITY: Escarcega (waypoint) ===== -->
+          <g class="pin" data-tip="escarcega">
+            <circle cx="495" cy="362" r="4.5" fill="#5c5346"/>
+            <text x="495" y="350" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="12.5" fill="#5c5346" text-anchor="middle">Escárcega</text>
+            <text x="495" y="378" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#8a8070" text-anchor="middle">gasolina · de paso</text>
+          </g>
+
+          <!-- ===== XPUJIL hub ===== -->
+          <g class="pin" data-tip="xpujil">
+            <circle cx="890" cy="400" r="7.5" fill="#c4501f"/>
+            <circle cx="890" cy="400" r="14" fill="none" stroke="#c4501f" stroke-width="1.3" opacity="0.35"/>
+            <text x="906" y="396" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#1c1812">Xpujil</text>
+            <text x="906" y="413" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#c4501f">base de operaciones</text>
+          </g>
+
+          <!-- ===== Becán ===== -->
+          <g class="pin" data-tip="becan">
+            <circle cx="845" cy="425" r="4" fill="#2f5d4f"/>
+            <text x="833" y="447" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="11.5" fill="#2f5d4f" text-anchor="middle">Becán</text>
+          </g>
+
+          <!-- ===== Volcán de los Murciélagos ===== -->
+          <g class="pin" data-tip="murcielagos">
+            <circle cx="772" cy="452" r="5" fill="#2f5d4f"/>
+            <text x="772" y="472" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="11.5" fill="#2f5d4f" text-anchor="middle">Volcán de</text>
+            <text x="772" y="484" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="11.5" fill="#2f5d4f" text-anchor="middle">Murciélagos</text>
+          </g>
+
+          <!-- ===== Conhuas caseta ===== -->
+          <g class="pin" data-tip="conhuas">
+            <circle cx="745" cy="447" r="4" fill="#8a8070"/>
+            <text x="730" y="430" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#8a8070" text-anchor="middle">caseta</text>
+            <text x="730" y="441" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#8a8070" text-anchor="middle">Conhuas</text>
+          </g>
+
+          <!-- ===== CALAKMUL site ===== -->
+          <g class="pin" data-tip="calakmul">
+            <path d="M696 462 l8 -16 l8 16 z" fill="#1c1812"/>
+            <path d="M700 462 l4 -9 l4 9 z" fill="#1c1812" opacity="0.6"/>
+            <text x="660" y="450" font-family="Fraunces, serif" font-weight="600" font-size="15" fill="#1c1812" text-anchor="middle">Calakmul</text>
+            <text x="660" y="464" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#5c5346" text-anchor="middle">zona arqueológica</text>
+          </g>
+
+          <!-- ===== HOTELS cluster near Xpujil ===== -->
+          <g class="pin hotel-pin" data-tip="h-balam">
+            <rect x="930" y="365" width="13" height="13" rx="3" fill="#c79a3d"/>
+            <text x="950" y="375" font-family="Space Grotesk, sans-serif" font-weight="600" font-size="11.5" fill="#1c1812">Maya Balam</text>
+          </g>
+
+          <g class="pin hotel-pin" data-tip="h-lolas">
+            <rect x="930" y="388" width="13" height="13" rx="3" fill="#c79a3d"/>
+            <text x="950" y="398" font-family="Space Grotesk, sans-serif" font-weight="600" font-size="11.5" fill="#1c1812">Casa Las Lolas</text>
+          </g>
+
+          <g class="pin hotel-pin" data-tip="h-kaan">
+            <rect x="930" y="411" width="13" height="13" rx="3" fill="#c79a3d"/>
+            <text x="950" y="421" font-family="Space Grotesk, sans-serif" font-weight="600" font-size="11.5" fill="#1c1812">Casa Kaan</text>
+          </g>
+
+          <g class="pin hotel-pin" data-tip="h-aldea">
+            <rect x="930" y="434" width="13" height="13" rx="3" fill="#c79a3d"/>
+            <text x="950" y="444" font-family="Space Grotesk, sans-serif" font-weight="600" font-size="11.5" fill="#1c1812">Aldea Maya</text>
+          </g>
+
+        </svg>
+      </div>
+
+      <div class="map-legend">
+        <span><i class="dot" style="background:#1c1812"></i> Ciudad</span>
+        <span><i class="dot" style="background:#c4501f"></i> Xpujil — centro de operaciones</span>
+        <span><i class="dot" style="background:#2f5d4f"></i> Sitio / atracción</span>
+        <span><i class="dot" style="background:#c79a3d"></i> Hotel — clic para cotizar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-tag">02 — Itinerario</span>
+        <h2>Hora por hora</h2>
+      </div>
+      <p class="sec-note">Los puntos en naranja son momentos donde el horario no perdona. Todo lo demás tiene margen.</p>
+    </div>
+
+    <!-- DAY 1 -->
+    <div class="day-block">
+      <div class="day-head">
+        <div class="day-num">V</div>
+        <h3>Viernes — la salida</h3>
+        <span class="day-date">Mérida → Xpujil</span>
+      </div>
+      <div class="day-events">
+        <div class="ev">
+          <div class="ev-time">Tarde</div>
+          <div class="ev-body">
+            <h4>Salida de Mérida, después del trabajo</h4>
+            <p>Entre más temprano salgan, mejor — son cerca de 5 horas de carretera hasta Xpujil.</p>
+          </div>
+        </div>
+        <div class="ev alert">
+          <div class="ev-time">~23:00</div>
+          <div class="ev-body">
+            <h4>Llegada a Xpujil</h4>
+            <p>Cenar algo ligero y dormir. Evitar manejar después de esta hora — la 186 tiene fauna cruzando.</p>
+            <span class="tag-warn">Evitar tramo Escárcega–Xpujil de noche</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-block">
+      <div class="day-head">
+        <div class="day-num">S</div>
+        <h3>Sábado — selva y piedra</h3>
+        <span class="day-date">Xpujil → Calakmul → Murciélagos → Xpujil</span>
+      </div>
+      <div class="day-events">
+        <div class="ev">
+          <div class="ev-time">06:00</div>
+          <div class="ev-body">
+            <h4>Salida hacia Calakmul</h4>
+            <p>~2h hasta la zona arqueológica, incluyendo los 60km de selva a 30km/h dentro de la reserva.</p>
+          </div>
+        </div>
+        <div class="ev">
+          <div class="ev-time">08:00</div>
+          <div class="ev-body">
+            <h4>Zona arqueológica de Calakmul</h4>
+            <p>Caminata entre estructuras — son kilómetros de distancia entre conjuntos. Llevar agua y comida, no hay tiendas dentro.</p>
+          </div>
+        </div>
+        <div class="ev alert">
+          <div class="ev-time">2:30pm</div>
+          <div class="ev-body">
+            <h4>Cierre de la caseta de Conhuas</h4>
+            <p>Después de esta hora no se puede entrar a la reserva. No afecta si ya están dentro, pero marca el límite de la mañana.</p>
+            <span class="tag-warn">Límite duro — no hay excepciones</span>
+          </div>
+        </div>
+        <div class="ev">
+          <div class="ev-time">~15:30</div>
+          <div class="ev-body">
+            <h4>Salida de Calakmul rumbo a Xpujil</h4>
+            <p>El Volcán de los Murciélagos queda de paso, en el km 106 — no es un desvío extra.</p>
+          </div>
+        </div>
+        <div class="ev alert">
+          <div class="ev-time">18:00–18:30</div>
+          <div class="ev-body">
+            <h4>Volcán de los Murciélagos</h4>
+            <p>Salida de los murciélagos al atardecer. En junio, el sol cae cerca de las 19:15 — llegar media hora antes. Tour ~$100 MXN por persona.</p>
+            <span class="tag-warn">Hora fija — depende del atardecer</span>
+          </div>
+        </div>
+        <div class="ev">
+          <div class="ev-time">Noche</div>
+          <div class="ev-body">
+            <h4>Regreso a Xpujil, cena y descanso</h4>
+            <p>El hotel queda a minutos del Volcán — sin tramos largos de noche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-block">
+      <div class="day-head">
+        <div class="day-num">D</div>
+        <h3>Domingo — comida y vuelta</h3>
+        <span class="day-date">Xpujil → Becán → Mérida</span>
+      </div>
+      <div class="day-events">
+        <div class="ev">
+          <div class="ev-time">10:00–11:00</div>
+          <div class="ev-body">
+            <h4>Comida local en Xpujil</h4>
+            <p>Cocina yucateca/campechana sencilla antes de salir — cochinita, panuchos, ese estilo.</p>
+          </div>
+        </div>
+        <div class="ev">
+          <div class="ev-time">~12:00</div>
+          <div class="ev-body">
+            <h4>Parada en Becán, de camino</h4>
+            <p>10 min de Xpujil, sobre la misma 186. El foso defensivo único en el mundo maya — 45min a 1h de recorrido.</p>
+          </div>
+        </div>
+        <div class="ev">
+          <div class="ev-time">~13:00</div>
+          <div class="ev-body">
+            <h4>Directo a Mérida</h4>
+            <p>~5 horas de regreso. Salir con este margen evita llegar de madrugada antes del lunes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOTELS + QUOTE ============ -->
+<section class="section" id="hotels">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-tag">03 — Hospedaje y cotización</span>
+        <h2>Elige el hotel, mira el total</h2>
+      </div>
+      <p class="sec-note">Todos en Xpujil o a minutos. La cotización de la derecha se recalcula sola con cada clic.</p>
+    </div>
+
+    <div class="hotel-quote-layout">
+
+      <!-- HOTEL CARDS -->
+      <div>
+        <div class="hotel-grid" id="hotelGrid">
+          <!-- injected by JS -->
+        </div>
+
+        <div class="fixed-grid" style="margin-top:32px;">
+          <div class="fcard">
+            <span class="ftag">Combustible</span>
+            <h4>Prius 2021 · 15 km/l</h4>
+            <div class="frow"><span>Viernes — Mérida→Xpujil</span><span>$640</span></div>
+            <div class="frow"><span>Sábado — Xpujil↔Calakmul</span><span>$960</span></div>
+            <div class="frow"><span>Domingo — Xpujil→Mérida</span><span>$640</span></div>
+            <div class="ftotal"><span>Total gasolina</span><span>$2,240</span></div>
+          </div>
+
+          <div class="fcard">
+            <span class="ftag">Entradas y tours</span>
+            <h4>Calakmul + Murciélagos</h4>
+            <div class="frow"><span>Calakmul (2 × $250)</span><span>$500</span></div>
+            <div class="frow"><span>Volcán Murciélagos (2 × $100)</span><span>$200</span></div>
+            <div class="frow"><span>Becán (de paso, domingo)</span><span>incl.</span></div>
+            <div class="ftotal"><span>Total entradas</span><span>$700</span></div>
+          </div>
+
+          <div class="fcard">
+            <span class="ftag">Comida — 2 personas</span>
+            <h4>Todo el fin de semana</h4>
+            <div class="frow"><span>Cena viernes</span><span>$300</span></div>
+            <div class="frow"><span>Sábado (desayuno+snacks+cena)</span><span>$750</span></div>
+            <div class="frow"><span>Domingo, comida local</span><span>$400</span></div>
+            <div class="ftotal"><span>Total comida</span><span>$1,450</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUOTE PANEL -->
+      <div class="quote-shell">
+        <div class="quote-head">
+          <div>
+            <div class="ql">Cotización en vivo</div>
+            <h3>2 personas · 2 noches</h3>
+          </div>
+          <div class="quote-hotel-badge" id="quoteHotelBadge">Maya Balam<br>seleccionado</div>
+        </div>
+
+        <div class="qgroup-label">Hospedaje</div>
+        <div class="qline">
+          <div><div class="ql-label" id="qHotelName">Hotel Maya Balam</div><span class="ql-sub" id="qHotelNights">2 noches</span></div>
+          <div class="ql-val" id="qHotelCost">$1,400</div>
+        </div>
+
+        <div class="qgroup-label">Transporte</div>
+        <div class="qline">
+          <div><div class="ql-label">Gasolina (3 trayectos)</div><span class="ql-sub">Prius · 15 km/l · ~$24/L</span></div>
+          <div class="ql-val">$2,240</div>
+        </div>
+
+        <div class="qgroup-label">Experiencia</div>
+        <div class="qline">
+          <div><div class="ql-label">Entradas Calakmul</div><span class="ql-sub">2 personas</span></div>
+          <div class="ql-val">$500</div>
+        </div>
+        <div class="qline">
+          <div><div class="ql-label">Tour Volcán de Murciélagos</div><span class="ql-sub">2 personas</span></div>
+          <div class="ql-val">$200</div>
+        </div>
+
+        <div class="qgroup-label">Comida</div>
+        <div class="qline" style="border-bottom:none;">
+          <div><div class="ql-label">Vie–Dom, 2 personas</div><span class="ql-sub">desayunos, comidas, cenas</span></div>
+          <div class="ql-val">$1,450</div>
+        </div>
+
+        <div class="qtotal">
+          <div>
+            <div class="tl">Total del viaje</div>
+            <div class="tv" id="qTotal">$5,790 <small>MXN</small></div>
+          </div>
+          <div class="pp">
+            por persona
+            <b id="qPerPerson">$2,895</b>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>MÉRIDA · CAMPECHE · XPUJIL · CALAKMUL — itinerario armado a mano, sin agencia de viajes de por medio.</p>
+  </div>
+</footer>
+
+<!-- floating tooltip for map -->
+<div class="pin-tip" id="mapTip"></div>
+
+<script>
+/* ============================================================
+   DATA
+   ============================================================ */
+const FIXED_COSTS = {
+  gas: 2240,
+  entries: 700,
+  food: 1450
+};
+
+const HOTELS = [
+  {
+    id: 'balam',
+    name: 'Hotel Maya Balam',
+    tier: 'Sencillo · 3★',
+    pricePerNight: 700,
+    meta: 'A pasos de Becán y del Volcán de los Murciélagos. Sin reservación en línea — se contacta directo.',
+    link: 'https://www.tripadvisor.com/Hotel_Review-g635715-d5566118-Reviews-Hotel_Maya_Balam-Xpujil_Town_Yucatan_Peninsula.html',
+    mapTipId: 'h-balam'
+  },
+  {
+    id: 'lolas',
+    name: 'Casa Las Lolas',
+    tier: 'Cabañas · 8.9/10',
+    pricePerNight: 850,
+    meta: 'Jardín en la selva, cocineta y cafetera propia. A 5 min caminando del centro de Xpujil.',
+    link: 'https://www.booking.com/hotel/mx/casa-lola-xpujil.html',
+    mapTipId: 'h-lolas'
+  },
+  {
+    id: 'kaan',
+    name: 'Casa Kaan',
+    tier: 'Eco-cabañas · 2★',
+    pricePerNight: 2089,
+    meta: 'Cabañas independientes con cocina completa, desayuno incluido. A 6 min de Xpujil centro.',
+    link: 'https://www.casakaan.com/en',
+    mapTipId: 'h-kaan'
+  },
+  {
+    id: 'aldea',
+    name: 'Cabañas Aldea Maya',
+    tier: 'Premium · 9.2/10',
+    pricePerNight: 1671,
+    meta: 'La opción más cómoda y mejor valorada — también la más cara para el contexto del pueblo.',
+    link: 'https://www.tripadvisor.com/Hotel_Review-g635715-d25436273-Reviews-Cabanas_Aldea_Maya-Xpujil_Town_Yucatan_Peninsula.html',
+    mapTipId: 'h-aldea'
+  }
+];
+
+const MAP_TIPS = {
+  'merida':       { title:'Mérida', body:'Punto de partida — salida viernes por la tarde.' },
+  'campeche':     { title:'Campeche', body:'Ciudad de paso, no hay parada planeada.' },
+  'escarcega':    { title:'Escárcega', body:'Última gasolinera confiable antes de Xpujil.' },
+  'xpujil':       { title:'Xpujil', body:'Base de operaciones — 2 noches aquí, todos los hoteles están cerca.' },
+  'becan':        { title:'Becán', body:'Ruinas con foso defensivo único — parada del domingo, 10 min de Xpujil.' },
+  'murcielagos':  { title:'Volcán de los Murciélagos', body:'Km 106, atardecer ~18:00–18:30. Tour $100 MXN/persona.' },
+  'conhuas':      { title:'Caseta de Conhuas', body:'Cierra 2:30pm — límite duro para entrar a la reserva.' },
+  'calakmul':     { title:'Calakmul', body:'Zona arqueológica, abre 8am–5pm. Entrada ~$250 MXN/persona.' },
+};
+
+/* ============================================================
+   BUILD HOTEL CARDS
+   ============================================================ */
+const grid = document.getElementById('hotelGrid');
+let activeHotelId = 'balam';
+
+function fmt(n){
+  return '$' + n.toLocaleString('en-US', {maximumFractionDigits:0});
+}
+
+function renderHotels(){
+  grid.innerHTML = '';
+  HOTELS.forEach(h => {
+    const card = document.createElement('div');
+    card.className = 'hcard' + (h.id === activeHotelId ? ' active' : '');
+    card.tabIndex = 0;
+    card.setAttribute('role','button');
+    card.setAttribute('aria-pressed', h.id === activeHotelId ? 'true':'false');
+    card.innerHTML = `
+      <span class="hcard-tier">${h.tier}</span>
+      <h4>${h.name}</h4>
+      <p class="hcard-meta">${h.meta}</p>
+      <div class="hcard-price">${fmt(h.pricePerNight)}<span>por noche, antes de impuestos</span></div>
+      <div class="hcard-cta">Cotizar con este hotel
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <a class="hcard-link" href="${h.link}" target="_blank" rel="noopener">Ver disponibilidad ↗</a>
+    `;
+    card.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') return; // let link work normally
+      selectHotel(h.id);
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectHotel(h.id); }
+    });
+    grid.appendChild(card);
+  });
+}
+
+function selectHotel(id){
+  activeHotelId = id;
+  renderHotels();
+  updateQuote();
+}
+
+/* ============================================================
+   QUOTE LOGIC
+   ============================================================ */
+function updateQuote(){
+  const h = HOTELS.find(x => x.id === activeHotelId);
+  const hotelCost = h.pricePerNight * 2; // 2 nights
+
+  document.getElementById('qHotelName').textContent = h.name;
+  document.getElementById('qHotelCost').textContent = fmt(hotelCost);
+  document.getElementById('quoteHotelBadge').innerHTML = h.name + '<br>seleccionado';
+
+  const total = hotelCost + FIXED_COSTS.gas + FIXED_COSTS.entries + FIXED_COSTS.food;
+  document.getElementById('qTotal').innerHTML = fmt(total) + ' <small>MXN</small>';
+  document.getElementById('qPerPerson').textContent = fmt(Math.round(total/2));
+}
+
+renderHotels();
+updateQuote();
+
+/* ============================================================
+   MAP TOOLTIPS
+   ============================================================ */
+const svg = document.getElementById('mapSvg');
+const tip = document.getElementById('mapTip');
+const mapInner = document.querySelector('.map-inner');
+
+function showTip(el, data){
+  tip.innerHTML = `<b>${data.title}</b>${data.body}`;
+  const rect = el.getBoundingClientRect();
+  const parentRect = mapInner.getBoundingClientRect();
+  const x = rect.left - parentRect.left + rect.width/2;
+  const y = rect.top - parentRect.top;
+  tip.style.left = x + 'px';
+  tip.style.top = y + 'px';
+  tip.classList.add('show');
+}
+function hideTip(){ tip.classList.remove('show'); }
+
+document.querySelectorAll('.pin').forEach(pin => {
+  const key = pin.getAttribute('data-tip');
+
+  pin.addEventListener('mouseenter', () => {
+    if (key.startsWith('h-')){
+      const hid = key.replace('h-','');
+      const h = HOTELS.find(x => x.id === hid);
+      if (h) showTip(pin, { title: h.name, body: `<span class="price">${fmt(h.pricePerNight)}/noche</span> · clic para cotizar` });
+    } else {
+      const d = MAP_TIPS[key];
+      if (d) showTip(pin, d);
+    }
+  });
+  pin.addEventListener('mouseleave', hideTip);
+
+  if (key.startsWith('h-')){
+    pin.style.cursor = 'pointer';
+    pin.addEventListener('click', () => {
+      const hid = key.replace('h-','');
+      selectHotel(hid);
+      document.getElementById('hotels').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+});
+
+/* ============================================================
+   DAY BLOCK collapse (mobile-friendly toggle, optional UX nicety)
+   ============================================================ */
+document.querySelectorAll('.day-head').forEach(head => {
+  head.setAttribute('tabindex','0');
+});
+</script>
+
+</body>
+</html>
